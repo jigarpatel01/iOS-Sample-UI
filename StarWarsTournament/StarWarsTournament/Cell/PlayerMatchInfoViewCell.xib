@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerMatchInfoViewCellID" rowHeight="128" id="KGk-i7-Jjw" customClass="PlayerMatchInfoViewCell" customModule="StarWarsTournament" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yjH-0Q-sUA">
+                        <rect key="frame" x="20" y="11" width="394" height="106"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osx-8N-DCR">
+                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="106"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9p-So-7Bf">
+                                <rect key="frame" x="131.5" y="0.0" width="131" height="106"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdW-rP-uHh">
+                                <rect key="frame" x="262.5" y="0.0" width="131.5" height="106"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yjH-0Q-sUA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="BJI-hh-jGG"/>
+                    <constraint firstItem="yjH-0Q-sUA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Qcj-zo-hYc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yjH-0Q-sUA" secondAttribute="bottom" id="pvm-OE-0Bc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yjH-0Q-sUA" secondAttribute="trailing" id="tGt-d8-fNr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="PlayerRight" destination="ZdW-rP-uHh" id="AFl-xD-iba"/>
+                <outlet property="matchScore" destination="W9p-So-7Bf" id="OeO-gw-eeV"/>
+                <outlet property="playerLeft" destination="Osx-8N-DCR" id="cJO-Du-ifc"/>
+            </connections>
+            <point key="canvasLocation" x="78.400000000000006" y="74.662668665667169"/>
+        </tableViewCell>
+    </objects>
+</document>
